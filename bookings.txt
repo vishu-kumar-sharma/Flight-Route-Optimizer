@@ -1,0 +1,5 @@
+1000 | abhishek | delhi->mumbai | 5500 | 11E
+1002 | vishu | delhi->shyamli | 320 | 13A
+1003 | himanshu | delhi->sirsa | 3000 | 14B
+1005 | krishna | delhi->etawah | 4589 | 16D
+1006 | devesh | delhi->chennai | 4000 | 17E

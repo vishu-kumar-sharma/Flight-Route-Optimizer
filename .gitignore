@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Streamlit/local runtime
+.streamlit/secrets.toml
+cloudflared*.log
+tools/
+
+# Build artifacts
+*.exe
+*.o
+*.obj
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

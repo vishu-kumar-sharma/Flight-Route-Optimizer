@@ -1,0 +1,24 @@
+digraph FlightRoutes {
+  rankdir=LR;
+  node [shape=circle, style=filled, color=lightblue];
+  "Delhi" -> "Chamba" [label="C7B890D\nRs25000\n450min"];
+  "Jodhpur" -> "delhi" [label="F61290\nRs4688\n320min"];
+  "bengaluru" -> "chennai" [label="GH78KJ12\nRs3000\n400min"];
+  "chamba" -> "delhi" [label="AF1234Z\nRs15000\n300min"];
+  "chamba" -> "jaipur" [label="SF458K1\nRs4500\n220min"];
+  "delhi" -> "shyamli" [label="V12SHU7\nRs1000\n120min"];
+  "delhi" -> "shyamli" [label="FGJK78\nRs400\n120min"];
+  "delhi" -> "jaipur" [label="AFG78HJ\nRs2000\n230min"];
+  "delhi" -> "jodhpur" [label="FBH7789\nRs4000\n210min"];
+  "delhi" -> "mumbai" [label="GH9JK12\nRs4599\n300min"];
+  "delhi" -> "mumbai" [label="G18K900\nRs12500\n300min"];
+  "delhi" -> "mumbai" [label="AK9KMD01\nRs12500\n340min"];
+  "delhi" -> "mumbai" [label="ABCD1234\nRs32300\n3min"];
+  "hyderadabad" -> "chennai" [label="K6FHJB5\nRs2300\n230min"];
+  "jaipur" -> "lucknow" [label="A112ZCJ\nRs3200\n320min"];
+  "jaipur" -> "lucknow" [label="AKJI6D2\nRs4400\n400min"];
+  "jodhpur" -> "lucknow" [label="GK23F45\nRs4300\n120min"];
+  "jodhpur" -> "bengaluru" [label="GHJNUI76\nRs3250\n321min"];
+  "lucknow" -> "prayagraj" [label="AK5700DF\nRs2000\n80min"];
+  "shyamli" -> "hyderadabad" [label="GH67JKL\nRs34000\n400min"];
+}
