@@ -49,10 +49,10 @@ try:
     )
 except ModuleNotFoundError as exc:
     st.error(f"Missing Python package: {exc.name}")
-    st.write("Start the app with the project virtual environment, or install dependencies into the Python environment currently running Streamlit.")
+    st.write("Install dependencies into the Python environment currently running Streamlit.")
     st.code(
-        ".\\.venv\\Scripts\\python.exe -m streamlit run app.py\n"
-        "# or\n"
+        "python -m venv .venv\n"
+        ".\\.venv\\Scripts\\Activate.ps1\n"
         "pip install -r requirements.txt",
         language="powershell",
     )

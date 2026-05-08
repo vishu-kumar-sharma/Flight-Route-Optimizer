@@ -15,14 +15,10 @@ Streamlit conversion of the C++ console-based flight route optimizer into an int
 ## Run
 
 ```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 streamlit run app.py
-```
-
-This workspace also has a local `.venv` prepared. You can run it directly:
-
-```powershell
-.\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 Or use the launcher:
@@ -31,9 +27,20 @@ Or use the launcher:
 .\run_app.ps1
 ```
 
-If you see `ModuleNotFoundError: No module named 'networkx'`, Streamlit is using a different Python environment. Start the app with `.\run_app.ps1` or `.\.venv\Scripts\python.exe -m streamlit run app.py` from this folder.
+If you see `ModuleNotFoundError: No module named 'networkx'`, Streamlit is using a different Python environment. Activate the virtual environment from this folder, then install dependencies with `pip install -r requirements.txt`.
 
 If Python is not on PATH on another machine, install Python 3.11+ first, then run the install command above from this folder.
+
+## Deploy
+
+This app is ready for Streamlit Community Cloud:
+
+1. Push this repository to GitHub.
+2. In Streamlit Community Cloud, create a new app from the GitHub repository.
+3. Select the `main` branch and set the entrypoint file to `app.py`.
+4. Keep `requirements.txt`, `.streamlit/config.toml`, and the data files in the repository root.
+
+GitHub Pages cannot host this app because Streamlit runs as a Python server application.
 
 ## Data Files
 
